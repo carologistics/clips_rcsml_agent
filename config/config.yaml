@@ -1,0 +1,33 @@
+/**:
+  ros__parameters:
+    autostart_node: true
+    environments: ["rcsml_agent"]
+
+    rcsml_agent:
+      plugins: ["executive","ros_msgs",
+                "protobuf", "config",
+                "ament_index", "files"]
+      log_clips_to_file: true
+      watch: ["facts", "rules"]
+
+    executive:
+      plugin: "cx::ExecutivePlugin"
+
+    ros_msgs:
+      plugin: "cx::RosMsgsPlugin"
+
+    protobuf:
+      plugin: "cx::ProtobufPlugin"
+      pkg_share_dirs: ["rcll_protobuf_msgs"]
+      proto_paths: ["rcll-protobuf-msgs"]
+
+    ament_index:
+      plugin: "cx::AmentIndexPlugin"
+
+    config:
+      plugin: "cx::ConfigPlugin"
+
+    files:
+      plugin: "cx::FileLoadPlugin"
+      pkg_share_dirs: ["clips_rcsml_agent"]
+      load: ["clips/refbox.clp", "clips/executor.clp","clips/agent.clp"]
