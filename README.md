@@ -1,5 +1,5 @@
 # clips_rcsml_agent
-A simple ROS2 CLIPS Executive based agent for the RoboCup Logistics League (soon to be RoboCup Smart Manufacturing League).
+A simple [ROS2 CLIPS Executive](https://github.com/carologistics/clips_executive/) based agent for the RoboCup Logistics League (soon to be RoboCup Smart Manufacturing League).
 Get started on the RCLL with this project.
 
 
